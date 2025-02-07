@@ -7,6 +7,7 @@ while(True):
   now = datetime.now()
   current_time = now.strftime("%H:%M")
   print(f'At time : {current_time} Local Time')
+  
   url = 'https://finance.yahoo.com/markets/crypto/all/'
   response = requests.get(url)
   text = response.text
